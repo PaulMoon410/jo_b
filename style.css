@@ -1,0 +1,200 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fff0f6 0%, #ffe4ec 100%);
+    color: #7a3b53;
+}
+header {
+    background: #fff0f6;
+    box-shadow: 0 2px 8px rgba(183,110,121,0.08);
+    padding: 1.5rem 0 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #f8c6d8;
+}
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    color: #e75480;
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #ffe4ec;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0.7rem 0 0 0;
+    gap: 2.5rem;
+}
+nav li {
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #e75480;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover, nav a:focus {
+    background: #ffe4ec;
+    color: #7a3b53;
+}
+main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    background: #fff8fb;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(231,84,128,0.08);
+    padding: 2.5rem 2rem;
+    border: 2px solid #ffe4ec;
+}
+section {
+    margin-bottom: 2.5rem;
+}
+section h2 {
+    color: #e75480;
+    margin-top: 0;
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+}
+#home p {
+    font-size: 1.3rem;
+    color: #a05a65;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+#services ul, .product-list {
+    padding-left: 1.2rem;
+}
+#services ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    color: #b76e79;
+}
+#appointments form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 0.9rem;
+    background: #fff0f6;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    border: 1.5px solid #f8c6d8;
+    box-shadow: 0 2px 12px #ffe4ec;
+}
+#appointments label {
+    font-weight: 500;
+    color: #e75480;
+}
+#appointments button {
+    background: linear-gradient(90deg, #e75480 0%, #f8c6d8 100%);
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #ffe4ec;
+    transition: background 0.2s;
+}
+#appointments button:hover {
+    background: linear-gradient(90deg, #f8c6d8 0%, #e75480 100%);
+}
+.product-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.product {
+    background: #fff0f6;
+    border-radius: 14px;
+    padding: 1.2rem 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 12px #ffe4ec;
+    border: 1.5px solid #f8c6d8;
+    transition: transform 0.15s;
+}
+.product:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 18px #f8c6d8;
+}
+.product h3 {
+    margin: 0.5rem 0;
+    color: #e75480;
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    font-size: 1.3rem;
+}
+.product p {
+    color: #a05a65;
+    font-size: 1.1rem;
+}
+.product button {
+    background: linear-gradient(90deg, #e75480 0%, #f8c6d8 100%);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #ffe4ec;
+    transition: background 0.2s;
+}
+.product button:hover {
+    background: linear-gradient(90deg, #f8c6d8 0%, #e75480 100%);
+}
+#cart {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+#cart li {
+    margin-bottom: 0.3rem;
+    color: #b76e79;
+    font-size: 1.05rem;
+}
+#cartTotal {
+    color: #e75480;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+}
+footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background: #fff0f6;
+    color: #e75480;
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    border-top: 2px solid #f8c6d8;
+    letter-spacing: 1px;
+}
+@media (max-width: 700px) {
+    main {
+        padding: 1rem;
+    }
+    .product-list {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+}

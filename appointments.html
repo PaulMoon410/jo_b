@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Joanna B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Joanna B</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="appointments.html">Book Appointment</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="appointments">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label>Name: <input type="text" name="name" required></label><br>
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label>Service:
+                    <select name="service" required>
+                        <option value="Haircut & Styling">Haircut & Styling</option>
+                        <option value="Coloring">Coloring</option>
+                        <option value="Cosmetic Tattoo (Brows)">Cosmetic Tattoo (Brows)</option>
+                        <option value="Lip Blush Tattoo">Lip Blush Tattoo</option>
+                        <option value="Eyeliner Tattoo">Eyeliner Tattoo</option>
+                    </select>
+                </label><br>
+                <label>Date: <input type="date" name="date" required></label><br>
+                <label>Time: <input type="time" name="time" required></label><br>
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="appointmentSuccess" style="display:none; color:green;">Thank you! Your appointment request has been received.</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Joanna B. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
